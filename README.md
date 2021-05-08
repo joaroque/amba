@@ -19,14 +19,14 @@ python amba.py
 - Copia o texto de `output.text` e cola no `README.md` do repositório [Awesome-made-by-angolans](https://github.com/joaroque/awesome-made-by-angolans)
 - Organize o conteúdo na sua linguagem de programação
 
-#### *Exmplo de saída:
+#### **Exmplo de saída:
 
 <p>- **[amba](https://github.com/joaroque/amba)** by [Joaquim Roque](https://github.com/joaroque)   
     Ferramenta para automatizar a escrita de projectos no reposiório https://github.com/joaroque/awesome-made-by-angolans  
   	![Stars](https://img.shields.io/github/stars/joaroque/amba?style=flat-square)<p>
 
 
-#### *Como fica renderizado:
+#### **Como fica renderizado:
 
 - **[amba](https://github.com/joaroque/amba)** by [Joaquim Roque](https://github.com/joaroque)   
     Ferramenta para automatizar a escrita de projectos no reposiório https://github.com/joaroque/awesome-made-by-angolans  
