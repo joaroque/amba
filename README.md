@@ -10,10 +10,10 @@
 - requests
 - json
 
-## COMO USAR
+### COMO USAR
 `sh
 python amba.py
 `
 
-## CONTRIBUA
+### CONTRIBUA
 [Awesome-made-by-angolans](https://github.com/joaroque/awesome-made-by-angolans)
