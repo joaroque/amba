@@ -2,7 +2,7 @@
   
 # AMBA - Awesome Made by Angolans
 > Script que automatiza escrita de projectos.
-
+<img alt="Amba" src"https://github.com/joaroque/amba/blob/main/screenshots/amba.jpg">
 </div>
 
 ### REQUER
