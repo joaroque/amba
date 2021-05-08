@@ -76,8 +76,8 @@ class Amba():
   			{lang}
     	"""
 		file = open('output.txt', 'a')
-		file.readlines()
-		file.writeline(text)
+		print(text,file=file)
+		file.write('\n')
 		file.close()
 
 	def print_info(self):
