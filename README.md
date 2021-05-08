@@ -5,10 +5,15 @@
 
 </div>
 
-### Requer
+### REQUER
 - Python3
 - requests
 - json
 
-## Contribua
+## COMO USAR
+`sh
+python amba.py
+`
+
+## CONTRIBUA
 [Awesome-made-by-angolans](https://github.com/joaroque/awesome-made-by-angolans)
