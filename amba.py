@@ -85,13 +85,9 @@ class Amba():
 		desc = self.get_repo_desc()
 		lang = self.get_repo_lang()
 		print("_________________ O/_________________________________________")
-		print(f"""
-        	USERNAME: {names[0]}
-        	REPOSITÓRIO: {names[1]}
-        	DESCRIÇÃO: {desc}
-        	LINGUAGEM(ENS) | PONTOS: {lang}
-    	""")
+		print(f"""\n\tUSERNAME: {names[0]}\n\tREPOSITÓRIO: {names[1]}\n\tDESCRIÇÃO: {desc}\n\tLINGUAGEM(ENS) | PONTOS: {lang} """)
 		print("_________________ O/_________________________________________")
+
 
 
 
