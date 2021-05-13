@@ -1,6 +1,6 @@
 import requests
 import json
-from os import system
+from os import system, mkdir, path
 
 
 class Amba():
@@ -75,7 +75,9 @@ class Amba():
     ==================== Langs and scores ====================
         {lang}
 """
-        with open('amba-repos/output.txt', '+a') as repo_details:
+        if not path.exists("amba-repos"):
+            mkdir("amba-repos")
+        with open('amba-repos/output.txt', 'w+') as repo_details:
             print(text, file=repo_details)
 
     def print_info(self):
