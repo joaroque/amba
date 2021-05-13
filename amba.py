@@ -1,5 +1,6 @@
 import requests
 import json
+from os import system
 
 class Amba():
 	
@@ -9,7 +10,7 @@ class Amba():
 	def get_names(self):
 		link = self.url[19:]
 		# find "/" in URL
-		# get username ande repo_name in url
+		# get username and repo_name in url
 		f = link.find("/")
 
 		# get user & repo name
@@ -39,7 +40,6 @@ class Amba():
 		return res['description']
 	
 	def get_repo_lang(self):
-
 		# get repo_full_name in get_names()
 		full_name = self.get_names()
 		full_name = full_name[2]
@@ -67,36 +67,45 @@ class Amba():
 		lang = self.get_repo_lang()
 		author_name = self.get_author_name(user_name)
 
-		text = f"""
-    	  - **[{repo_name}]({self.url})** by [{author_name}](https://github.com/{user_name})  
-  			{desc}  
-  			![Stars](https://img.shields.io/github/stars/{repo_full_name}?style=flat-square)
+		text = f"""- **[{repo_name}]({self.url})** by [{author_name}](https://github.com/{user_name})  
+		{desc}  
+		![Stars](https://img.shields.io/github/stars/{repo_full_name}?style=flat-square)
 
-  			================= Lang and scores =================
-  			{lang}
-    	"""
-		file = open('output.txt', 'a')
-		print(text,file=file)
-		file.write('\n')
-		file.close()
+	==================== Langs and scores ====================
+		{lang}
+"""
+		with open('amba-repos/output.txt', '+a') as repo_details:
+			print(text, file=repo_details)
 
 	def print_info(self):
 		names = self.get_names()
 		desc = self.get_repo_desc()
 		lang = self.get_repo_lang()
-		print("_________________ O/_________________________________________")
 		print(f"""
-        	USERNAME: {names[0]}
-        	REPOSITÓRIO: {names[1]}
-        	DESCRIÇÃO: {desc}
-        	LINGUAGEM(ENS) | PONTOS: {lang}
-    	""")
-		print("_________________ O/_________________________________________")
+	_________________ O/_________________________________________
+		USERNAME: {names[0]}
+		REPOSITÓRIO: {names[1]}
+		DESCRIÇÃO: {desc}
+		LINGUAGEM(ENS) | PONTOS: {lang}
+	_________________ O/_________________________________________
+	""")
 
+	def pull_request(self):
+		git_command = fr"""git add ./amba-repos/output.txt
+git commit -m "Adding another Awesome project"
+git branch -M ambaBot
+git remote add origin https://github.com/joaroque/awesome-made-by-angolans.git
+git push -u origin main"""
+		try:
+			input(system(git_command))
+			print("Proccess conclude now wait to manteiners merge your pull and update the details..\nThank you for being Awesome!")
+		except Exception as erro:
+			print('\n'+erro)
 
+ 
 
 def main():
-    banner = """
+    banner = r"""
                  ___      .___  ___. .______        ___      
                 /   \     |   \/   | |   _  \      /   \     
                /  ^  \    |  \  /  | |  |_)  |    /  ^  \    
@@ -109,13 +118,12 @@ def main():
     by: https://github.com/joaroque
     """
     print(banner)
-    url = input("Cole a url --> ")
-    str(url)
+    url = str(input("Cole (digite) a url --> "))
     amba = Amba(url)
     amba.get_names()
     amba.get_repo_desc()
     amba.get_repo_lang()
-    #amba.write_file()
+    amba.write_file()
     amba.print_info()
 
 	
