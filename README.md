@@ -20,10 +20,10 @@
 python amba.py
 ```
 
-- Cole (digite) a URL do repositório que queres extrair informações
-- Os detalhes do repostório estará em `./amba-repos/output.txt`
-- Em seguida o bot do programa vai fazer o pull-request usando os seus dados, para o repositório [Awesome-made-by-angolans](https://github.com/joaroque/awesome-made-by-angolans)
-- Aguarde até que algum responsável aceite a sua contribuição e atualize os dados
+- Cole (digite) a URL do repositório que queres extrair informações.
+- Os detalhes do repostório estará em: `./amba-repos/output.txt`
+- Em seguida o ‘bot’ do programa vai fazer o pull-request usando os seus dados, para o repositório: [Awesome-made-by-angolans](https://github.com/joaroque/awesome-made-by-angolans)
+- Aguarde até que algum responsável aceite a sua contribuição e atualize os dados.
 
 ### Exmplo de saída
 
@@ -35,8 +35,8 @@ python amba.py
 
 ### Como ficará renderizado (organizado)
 
-- **[amba](https://github.com/joaroque/amba)** by [Joaquim Roque](https://github.com/joaroque)
-    Ferramenta para automatizar a escrita de projetos no reposiório <https://github.com/joaroque/awesome-made-by-angolans>  
+- **[amba](https://github.com/joaroque/amba)** by [Joaquim Roque](https://github.com/joaroque) \
+    Ferramenta para automatizar a escrita de projetos no reposiório <https://github.com/joaroque/awesome-made-by-angolans> \
    ![Stars](https://img.shields.io/github/stars/joaroque/amba?style=flat-square)
 
 ## Teste
