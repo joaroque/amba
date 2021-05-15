@@ -72,9 +72,9 @@ class Amba:
     ==================== Langs and scores ====================
         {lang}
 """
-        if not path.exists("amba-repos"):
-            mkdir("amba-repos")
-        with open('amba-repos/output.txt', 'w+') as repo_details:
+        if not path.exists("amba-bin/amba-repos"):
+            mkdir("amba-bin/amba-repos")
+        with open('amba-bin/amba-repos/output.txt', 'w+') as repo_details:
             print(text, file=repo_details)
 
     def print_info(self):
