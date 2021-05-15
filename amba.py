@@ -3,7 +3,7 @@ import json
 from os import system, mkdir, path
 
 
-class Amba():
+class Amba:
 
     def __init__(self, url):
         self.url = url
@@ -20,10 +20,7 @@ class Amba():
         repo_full_name = link
 
         # append all in list
-        url_info = []
-        url_info.append(user_name)
-        url_info.append(repo_name)
-        url_info.append(repo_full_name)
+        url_info = [user_name, repo_name, repo_full_name]
         return url_info
 
     def get_repo_desc(self):
@@ -68,8 +65,8 @@ class Amba():
         lang = self.get_repo_lang()
         author_name = self.get_author_name(user_name)
 
-        text = f"""- **[{repo_name}]({self.url})** by [{author_name}](https://github.com/{user_name})  
-        {desc}  
+        text = fr"""- **[{repo_name}]({self.url})** by [{author_name}](https://github.com/{user_name}) \
+        {desc} \
         ![Stars](https://img.shields.io/github/stars/{repo_full_name}?style=flat-square)
 
     ==================== Langs and scores ====================
@@ -97,10 +94,12 @@ class Amba():
         print("Agora bora enviar os seus detalhes para o projeto principal..? (^_^)")
         git_command = "sh pull_request.sh"
         try:
-            input(system(git_command))
-            print("Proccesso concluido agora só resta esperar ate que os responsaveis aceitem e façam as atualizações dos seus detalhes..\nObrigado por ser Awesome!")
+            input(f"{system(git_command)}\n[!!] Para autenticar o seu PR Escreva (AmbaBot) e pressione ENTER\n\tEm seguida (awesomemadebyangolans1) e pressione ENTER..\n")
+            print("\nProccesso concluido agora só resta esperar ate que os responsaveis aceitem e façam as atualizações dos seus detalhes..")
         except Exception as erro:
             print('\n'+erro)
+        finally:
+            print("Obrigado por ser Awesome!")
 
 
 def main():
