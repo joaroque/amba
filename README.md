@@ -25,7 +25,7 @@ python amba.py
 - Em seguida o ‘bot’ do programa vai fazer o pull-request usando os seus dados, para o repositório: [Awesome-made-by-angolans](https://github.com/joaroque/awesome-made-by-angolans)
 - Aguarde até que algum responsável aceite a sua contribuição e atualize os dados.
 
-### Exmplo de saída
+### Exmplo de saída no arquivo `output.txt`
 
 ```md
 - **[amba](https://github.com/joaroque/amba)** by [Joaquim Roque](https://github.com/joaroque)   
@@ -33,7 +33,7 @@ python amba.py
     ![Stars](https://img.shields.io/github/stars/joaroque/amba?style=flat-square)
 ```
 
-### Como ficará renderizado (organizado)
+### Como ficará renderizado (organizado) `no terminal`
 
 - **[amba](https://github.com/joaroque/amba)** by [Joaquim Roque](https://github.com/joaroque) \
     Ferramenta para automatizar a escrita de projetos no reposiório <https://github.com/joaroque/awesome-made-by-angolans> \
