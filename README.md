@@ -33,7 +33,7 @@ python amba.py
     ![Stars](https://img.shields.io/github/stars/joaroque/amba?style=flat-square)
 ```
 
-### Como ficará renderizado (organizado) `no terminal`
+### Como ficará renderizado (organizado) no terminal
 
 - **[amba](https://github.com/joaroque/amba)** by [Joaquim Roque](https://github.com/joaroque) \
     Ferramenta para automatizar a escrita de projetos no reposiório <https://github.com/joaroque/awesome-made-by-angolans> \
