@@ -39,10 +39,6 @@ python amba.py
     Ferramenta para automatizar a escrita de projetos no reposiório <https://github.com/joaroque/awesome-made-by-angolans> \
    ![Stars](https://img.shields.io/github/stars/joaroque/amba?style=flat-square)
 
-## Teste
-
-![teste-imagem](screenshots/teste.png)
-
 ## CONTRIBUA
 
 [Awesome-made-by-angolans](https://github.com/joaroque/awesome-made-by-angolans)
