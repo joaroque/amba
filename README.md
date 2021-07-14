@@ -44,7 +44,7 @@ python amba.py
 - Crie uma nova branch
 - Faça pull request na branch `dev`
 
->> Seu código será revisado e talvéz aprovado :smile:
+> Seu código será revisado e talvéz aprovado :smile:
 
 ## REPOSITÓRIO
 [Awesome-made-by-angolans](https://github.com/joaroque/awesome-made-by-angolans)
